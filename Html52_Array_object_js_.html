@@ -1,0 +1,55 @@
+<!-- The object class represents one of JavaScript’s data types. It is used to store various keyed collections and more complex entities. Objects can be created using the Object() constructor. we have two types of values used in JavaScript- primitive and reference. To be more simple, either we create objects or primitive data types.  -->
+
+
+<!-- There is a special kind of object known as Arrays. The JavaScript Array class is a global object that is used in the construction of arrays; which are high level, list-like objects. An array is a special variable, which can hold more than one value at a time.  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and object</title>
+</head>
+<body>
+    <div class="container">simple HTML </div>
+    <script>
+        // The primitive data types are as follows-
+        let myVar =34;
+        let myVar1 ="String";
+        let myVar2 = true;
+        let myVar3 =null;
+        let myVar4 =undefined;
+     
+        // this is  how to define objects.
+      
+        let employee ={
+            name:"Amir",
+            salary:1000, brench : "CSE",
+            channel :"codewithAmir",
+            channel2:"programingwithAmir"
+        }
+        console.log(employee);
+        
+        // we can declare an array as follow
+        let name =[120,25,130,"Amir",undefined];
+        console.log(name);
+        // that is how to print the value present at index number 1.
+        console.log(names[1]);
+       
+        // to sort this array, we can use sort() function as follows
+        name = name.sort();
+
+        // the new keyword is used to create a new object,and to know the length of an array we can use the length function as follow. 
+        let arr = new Array(23);
+        console.log(name.length);
+        console.log(arr);
+
+       // this is how push or add another element in array
+        name = name.push("this is push");
+
+    </script>
+    
+</body>
+</html>

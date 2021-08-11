@@ -1,0 +1,135 @@
+
+/* navigation bar in media */
+
+#navbar
+{
+    flex-direction: column;
+}
+/* Navigation Bar : imag and logo */
+
+#logo img{
+    width: 80px;
+    height: 70px;
+    border: 2px solid rgb(170, 168, 168);
+    border-radius: 10px;
+}
+
+#logo{
+    margin: 5px 5px;
+    
+    
+}
+
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+        
+    }
+   
+    /* Navigation Bar : List style */
+    
+    #navbar ul li{
+    
+        
+        font-size: 1rem;
+        
+    }
+    /* Home Section */
+#home{
+    
+    padding: 3px 20px;
+    height: 350px;
+
+    
+}
+#home::before{
+
+    
+    height: 400px;
+   
+    
+}
+
+#home .btn{
+    padding: 5px 5px;
+    margin: 10px 5px;
+    font-size: 10px;
+   
+}
+
+#home p{
+    text-align: center;
+    font-size: 13px;
+}
+
+
+/* services section */
+
+.services{
+    
+    flex-wrap: wrap;
+    
+}
+
+/* Clients section */
+
+.client{
+    
+    flex-wrap: wrap;
+    
+}
+
+
+.item-client  img{
+    height: 50px;
+    margin: 15px 15px;
+}
+
+
+/* Contact section */
+
+
+.contact-box{
+    flex-wrap: wrap;
+}
+.contact-box form{
+    width: 30%;
+}
+.contact-box input,.contact-box textarea{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 15px;
+    
+}
+.contact::before{
+ 
+    height: 450px;
+ 
+}
+
+
+
+/* utility section */
+.h-primary{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.h-primary-center{
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.center{
+   
+    font-size: 1.5rem;
+}
+
+    
+
+
+

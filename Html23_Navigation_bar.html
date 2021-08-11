@@ -1,0 +1,83 @@
+<!-- A navigation bar is usually a list of links, so using the <ul> and <li> elements can help in obtaining it. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation bar</title>
+    <Style>
+        .navbar {
+            background-color: rgb(0, 0, 0);
+      
+            border-radius: 20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 15px 15px;
+
+
+            /* margin-top: 15px;
+            margin-left: 15px;
+            margin-bottom: 15px; */
+            /* background-color: brown; */
+            /* padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: 15px; */
+
+            /* padding-left: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px; */
+            /* padding-top: 15px; */
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .search {
+            float: right;
+          
+            margin: 15px 75px;
+           
+            /* padding: 15px 75px; */
+        }
+        .search input{
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 170px;
+        }
+        .navbar li a:hover{
+
+            color: brown;
+        }
+    </Style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="searchid" placeholder=" Search">
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

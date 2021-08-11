@@ -1,0 +1,85 @@
+<!--1- Loops can execute a block of code a number of times. Loops are handy, if you want to run the same code over and over again, each time with a different value. -->
+
+<!--2- there is another simpler way to write the same loop with the help of forEach. -->
+
+<!--3- There is one more way of writing it using for/of loops. It loops through the values of an iterable object. -->
+
+<!--4- To iterate through an object, we can use for/in loops. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsum voluptates voluptate enim iure at recusandae sit explicabo, quidem obcaecati. Facilis laudantium accusamus rerum velit magnam odit a doloribus. Laborum.</p>
+    </div>
+    <script>
+        console.log("this is all about loop")
+
+        // let i=1;
+        // for(i=1;i<=10;i++)
+        // {
+        //     console.log(i);
+        // }
+
+        let friend = ["Amir", "Asif", "Tanzil", "Edris", "Sarfaraz"];
+
+        // loop
+        // 1- for loop old version
+
+        // for (let index = 0; index < friend.length; index++) 
+        // {
+        //     console.log("Hello Firend "+ friend[index]) ;
+
+        // }
+
+
+        // 2- foreach
+        friend.forEach(function f(element) {
+            console.log("Hello friend " + element + " in modern java script");
+        });
+
+        // 2- (For-of)
+        // for (element of friend) {
+
+        //     console.log("Hello friend " + element + " ,in modern java script" );
+        // }
+
+        //To Execute every key of an object
+
+        // let student ={
+        //     Name: "Amir",
+        //     Salary : 22000,
+        //     Branch : "computer science Engineering"
+        // }
+
+        // for ( key in student) {
+        //        console.log(`The ${key} of student is ${student[key]}`);        
+        //     }
+
+
+
+        // while loop in js
+        let i = 0;
+        while (i < 4) {
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+
+        // do while loop in js
+        let j = 34;
+        do {
+            console.log(`${j} is less than 4 and we are inside do while loop`);
+            j++;
+        } while (j < 4);
+    </script>
+
+</body>
+
+</html>

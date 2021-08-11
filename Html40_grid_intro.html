@@ -1,0 +1,49 @@
+<!-- CSS grids are the display properties that allow us to transform any box into the grid. The main difference between flexbox and grid is, in flexbox, we can either move the box in horizontal or vertical directions but in the grid system, we can make the two-dimensional grid systems as follows- -->
+
+<!-- We can also write it using fr units as shown below-
+grid-template-columns: 1fr 4fr 1fr;
+The above code means from the whole width, give 1 part to the first item, 4 parts to the second item, and again 1 part to the last item. The result will look as follows- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid tuturial</title>
+    <style>
+
+        .container{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            /* grid-template-columns: repeat(5,auto); */
+
+            grid-template-rows: 3fr 3fr 3fr;
+            grid-gap: 2rem;
+
+        }
+        .item{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+            border: 2px solid black;
+            /* margin: 3px; */
+            padding: 50px;
+
+        }
+    </style>
+
+</head>
+<body>
+  <div class="container">
+      <div class="item">this is item-1</div>
+      <div class="item">this is item-2</div>
+      <div class="item">this is item-3</div>
+      <div class="item">this is item-4</div>
+      <div class="item">this is item-5</div>
+      <div class="item">this is item-6</div>
+      <div class="item">this is item-7</div>
+      <div class="item">this is item-8</div>
+      <div class="item">this is item-9</div>
+  </div>
+    
+</body>
+</html>

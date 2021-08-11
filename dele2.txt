@@ -1,0 +1,1 @@
+Helloo Amir hussain mohibi this the first file you havev written by the help of writFileSync

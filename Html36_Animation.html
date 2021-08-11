@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe and Animation</title>
+    <style>
+        .container {
+            background-color: yellow;
+        }
+
+        .box {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            /* The position of the box is set to be relative so that we can move it within our webpage. */
+            position: relative;
+
+            /* For making our animation, we need to start by giving the animation-name. We can give any name here. It is just used to define our animation. The code for designing the animation is as follows- */
+           animation-name: Amir1;
+
+
+           /* In the above example, we are using the animation-name as Amir1. The next property used is animation-duration. It is used to decide how long our animation will run. The last property is animation-iteration-count. It is used to decide the number of times the animation will run. */
+            
+            
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            /* animation-timing-function: ease-out; */
+            /* animation-fill-mode: backwards; */
+
+
+
+
+
+            /* animation-fill-mode: alternate; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 3s; */
+        /* animation-direction: reverse;  */
+
+        /* These properties can be set using this shorthand */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: harry 5s ease-in 1s 12 backwards; */
+        }
+
+
+
+        /* @keyframes Amir1 {
+
+            The keyframes are used to make the animation. From and to are used to decide how the animation will move in the webpage. In the above example, we are moving the animation harry 1 from 200px to 1400px. These types of animations are used to design scroll bars or progress bars on the webpage.
+
+            from {
+                width: 250px;
+
+            }
+
+            to {
+                width: 1500px;
+            }
+        } */
+
+        @keyframes Amir1 {
+
+            0% {
+                top:0px;
+                left:0px;
+                 
+            }
+
+            25% {
+
+                top:250px;
+                left:0px;
+            }
+
+            75% {
+
+                top:250px;
+                left:250px;
+            }
+
+            100% {
+                
+                top:0px;
+                left:250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+
+</body>
+
+</html>

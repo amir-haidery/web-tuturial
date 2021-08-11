@@ -1,0 +1,24 @@
+/* 
+NPM helps us to manage the packages in NodeJs.To understand this,
+ we will make a new directory as tut69.Till now, we have only one file inside this directory i.e.,
+Node69.js.But as soon as we write npm init on the terminal, it asks several questions like the package name, version, description, entry point, keyword, author, etc.When we execute this, 
+there is a new file called package.json inside the Node69 directory.
+*/
+
+
+
+{
+    "name": "node69",
+    "version": "1.0.0",
+    "description": "This is the best package ever built by someone",
+    "main": "Node69.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Amir",
+    "license": "ISC",
+    "dependencies": {
+        "nodemon": "^2.0.7",
+        "slugify": "^1.5.0"
+    }
+}

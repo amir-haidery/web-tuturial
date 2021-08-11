@@ -1,0 +1,88 @@
+<!-- we have discussed different pseudo-selectors in CSS. Here, we are going to learn some more advanced pseudo-selectors that will benefit a lot in web development. We will start by making a new file as tut32.html and will add the basic template. Give the title as an attribute and nth-child pseudo-selectors in the <title> tag. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alttribute and nth child pseudo selectors</title>
+    <style>
+        .container{
+            display: block;
+            
+            
+            width: 250px;
+            margin: auto;
+            padding: 25px 23px;
+
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        input[type='email']{
+            padding: 45px;
+            color: blue;
+        }
+        input[type='submit']
+        {
+            background-color: brown;
+            color: antiquewhite;
+            margin: auto;
+        }
+        input[type='password']
+        {
+            padding: 45px;
+            color: rgb(72, 255, 0);
+            background-color: brown;
+        }
+        a[target]{
+            font-size: 44px;
+            color: darkgoldenrod;
+
+        }
+        /* The above code will convert the text color to the cyan of the third only. What if we want to change the text color to red of every third element of the list. In that case, we can write- */
+        li:nth-child(3){
+            color: blue;
+            text-decoration: underline;
+            text-decoration: double;
+        }
+        li:nth-child(2n+2){
+            color: rgb(21, 255, 0);
+            text-decoration: underline;
+            text-decoration: double;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h2><a href="http://www.facebook.com" target="_self"></a>Go to facebook</h2>
+
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="Password" placeholder="Enter your Password">
+            <input type="email" placeholder="Enter your Email">
+            <input type="submit" value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    </div>
+        
+</body>
+</html>

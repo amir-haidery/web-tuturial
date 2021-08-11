@@ -1,0 +1,31 @@
+<!-- nline elements are those elements which only occupy the space bounded by the tags defining the element, instead of breaking the flow of element. 
+    On the other hand, block-level elements take up the entire space of its parent element. -->
+
+
+<!-- 
+    It is because the paragraph tag is a block element. The Block element means that it will take the full width of a single line and does not allow any other content to fit in it. But, if we write both the texts between the <span> tags like-
+
+        <span>This is a paragraph</span> <span>This is also a paragraph</span>
+        Then we see that both the texts will appear in the same line. It is because the <span> tag is an inline element. It allows all the elements in the same line.
+        
+        To understand it more, we can take the help of CSS by applying the border. However, you need not worry about the border as it is a part of CSS. I’m using this just for the case of an example.
+    
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline and Block</title>
+</head>
+
+<body>
+    <strong style="border: 2px solid red;">this is a paragraph</strong> <a style="border: 2px solid blue;">
+        this is also a paragraph</a>
+    <span style="border: 2px solid red;">this is a span</span> <span style="border: 2px solid red;">this is also a span</span>
+
+
+</body>
+
+</html>

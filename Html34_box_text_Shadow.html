@@ -1,0 +1,57 @@
+<!-- The box-shadow CSS property adds shadow effects around an element’s frame. We can set multiple effects separated by commas. It is described by X and Y offsets relative to the element, blur and spread radius, and colour. The text-shadow CSS property adds a shadow to text. It accepts a comma-separated list of shadows to be applied to the text and any of its decorations. It is also described by some combination of X and Y offsets from the element, blur radius, and colour. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+            margin: 20px 20px;
+        }
+        .card{
+            /* display: flex; */
+            margin: 20px 20px;
+            padding: 10px 20px;
+            
+            background-color: rgb(0, 0, 0);
+            /* border: 2px solid black; */
+
+            box-shadow: 10px 10px 12px green;
+            
+        }
+        .card h2{
+            text-shadow: 2px 2px 3px white;
+        } 
+                
+        p{
+            color: rgb(255, 255, 255);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="card" id="card1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint exercitationem beatae nostrum quisquam blanditiis eum necessitatibus qui obcaecati. Eligendi tempora eaque iusto velit voluptatum recusandae ipsam adipisci saepe debitis accusantium, necessitatibus ad quaerat commodi iste voluptatem cumque explicabo illo.</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint exercitationem beatae nostrum quisquam blanditiis eum necessitatibus qui obcaecati. Eligendi tempora eaque iusto velit voluptatum recusandae ipsam adipisci saepe debitis accusantium, necessitatibus ad quaerat commodi iste voluptatem cumque explicabo illo.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sint exercitationem beatae nostrum quisquam blanditiis eum necessitatibus qui obcaecati. Eligendi tempora eaque iusto velit voluptatum recusandae ipsam adipisci saepe debitis accusantium, necessitatibus ad quaerat commodi iste voluptatem cumque explicabo illo.</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

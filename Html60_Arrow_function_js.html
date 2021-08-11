@@ -1,0 +1,84 @@
+<!-- we are going to learn about Arrow Functions and Lexical this used in JavaScrip -->
+<!-- An arrow function expression is a syntactically compact alternative to a regular function expression, although without its own bindings to this, arguments, super or new.target keywords. Arrow function expressions are ill-suited as methods, and they cannot be used as constructors -->
+
+<!-- We will get the same output as the above after executing this code. This function can also be used with the setTimeout() -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <div class="Conatiner">
+        <h1>This is Hearder</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis unde ipsam nam. Debitis tenetur dolore
+            culpa eveniet ea iure, possimus ab. Consectetur dolorum eveniet fuga ipsam sequi. Et saepe, ipsa dolorem,
+            corporis labore, at qui repellat a eos non quasi? Quia tempora cupiditate atque animi expedita placeat rem
+            quidem iste?\</p>
+    </div>
+    <script>
+        //1- simple Function 
+
+        // function greeting() {
+
+        //     console.log("Good Evening gental men");
+
+        // }
+
+
+        //2- Arrow Function
+
+        // let greeting  = () =>{
+        //     console.log("Good morning");
+        // }
+
+        // let greeting = () => console.log("Hello Baby");
+
+        // greeting();
+
+        // If we have any single variable in our code, then we don’t need to put any braces also. The example for this is as follows-
+
+        // let sum = (a,b) => {
+            //     return a+b;
+            // }
+
+
+            // Now let us see the use of lexical this with the help of an example. If we make the object obj1 and an array of names and then make a function as speak which does the following task as follows-
+            
+            // This variable is normally used to point the variable inside the function. But in the case of arrow functions, it points the variable outside the function. This is known as lexical this. Therefore, we get the output as follows-
+            
+            setTimeout(() => {
+               
+                console.log("We are inside of settimeout function")
+                
+            }, 3000);
+
+            let obj = {
+
+                Greeting : "Good Morning ", 
+                name : ["Amir" , "Asif" ,"Tanzil","Sarfaraz hussain"],
+                 speak()
+                {
+                    this.name.forEach((Student)=>{
+                        
+                        
+                        console.log(this.Greeting + " kukdoo koo ", Student );
+                        
+                        // if use the normal Function then opertor(this) does not work or if we use it then the scope of this operator will just inside  fuction where it used. 
+                    });
+                }
+            }
+
+            obj.speak();
+
+
+    </script>
+
+</body>
+
+</html>

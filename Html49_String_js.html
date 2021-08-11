@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript | String and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <div id="content"></div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem adipisci necessitatibus quam! Inventore, neque. Quas tempore architecto sapiente culpa, aperiam esse dolores ipsam id dolor inventore velit veniam odio ullam veritatis cum reprehenderit?
+        </p>
+        <script>
+            var string ="this"
+            var name ="Amir"
+            var channel = `CodewithAmir`;
+            var message = 'Amir is a good boy';
+            // console.log(string + name + message);
+            var temp = `${name} is a 'nice' person "and "will has channel call ${channel}`;
+            console.log(temp);
+            var len = channel.length;
+            console.log(`Lenght of Name is ${len}`);
+
+            var y = new String("This");
+            console.log(y);
+            // This is how we add extra stuff from javascript
+
+            document.getElementById('content').innerHTML = '<h2>This is header number two</h2>';
+        
+        </script>
+    </div>
+</body>
+</html>
